@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import profile from '../../images/Photo less than 50kb.jpg'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../../node_modules/bootstrap/dist/js/bootstrap.bundle'
@@ -15,8 +15,21 @@ const Info = (props) => {
     const handleChange = (e) => {
         const showBreak = parseInt(e.target.innerText);
 
+        localStorage.setItem("break", showBreak);
         setBreak(showBreak);
+        // const item = JSON.parse(localStorage.getItem('break'));
+        // if (item) {
+        //     setBreak(item);
+        // }
+
     }
+    useEffect(() => {
+        const item = JSON.parse(localStorage.getItem('break'));
+        if (item) {
+            setBreak(item);
+        }
+
+    }, [])
 
     const toastTrigger = document.getElementById('liveToastBtn')
     const toastLiveExample = document.getElementById('liveToast')
