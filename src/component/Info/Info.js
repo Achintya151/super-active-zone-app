@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import profile from '../../images/Photo less than 50kb.jpg'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../../node_modules/bootstrap/dist/js/bootstrap.bundle'
 import './Info.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons'
+import bootstrapBundle from '../../../node_modules/bootstrap/dist/js/bootstrap.bundle';
 
 
 const Info = (props) => {
@@ -14,6 +16,17 @@ const Info = (props) => {
         const newBreak = showBreak + breaks;
         setBreak(newBreak);
     }
+
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrapBundle.Toast(toastLiveExample)
+
+            toast.show()
+        })
+    }
+
     return (
         <div className='d-flex flex-column justify-content-center'>
             <div className='d-flex justify-content-center mb-5'>
@@ -65,7 +78,20 @@ const Info = (props) => {
             </div>
 
             <div className='d-grid text-center'>
-                <button type="button" class="btn btn-primary">Activity Completed</button>
+                <button type="button" class="btn btn-primary" id="liveToastBtn">Activity Completed</button>
+            </div>
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img src="..." class="rounded me-2" alt="..." />
+                        <strong class="me-auto">Bootstrap</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Congratulations !!  Task completed.
+                    </div>
+                </div>
             </div>
         </div >
     );
