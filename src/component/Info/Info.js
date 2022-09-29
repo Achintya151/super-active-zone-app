@@ -8,13 +8,14 @@ import { faLocation } from '@fortawesome/free-solid-svg-icons'
 import bootstrapBundle from '../../../node_modules/bootstrap/dist/js/bootstrap.bundle';
 
 
+
 const Info = (props) => {
     const [breaks, setBreak] = useState(0);
 
     const handleChange = (e) => {
         const showBreak = parseInt(e.target.innerText);
-        const newBreak = showBreak + breaks;
-        setBreak(newBreak);
+
+        setBreak(showBreak);
     }
 
     const toastTrigger = document.getElementById('liveToastBtn')
@@ -83,9 +84,9 @@ const Info = (props) => {
             <div class="toast-container position-fixed top-0 end-0 p-3">
                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
-                        <img src="..." class="rounded me-2" alt="..." />
-                        <strong class="me-auto">Bootstrap</strong>
-                        <small>11 mins ago</small>
+
+                        <strong class="me-auto">Super Active Zone App</strong>
+                        <small></small>
                         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                     </div>
                     <div class="toast-body">
