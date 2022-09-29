@@ -1,0 +1,38 @@
+[
+    {
+        "_id": "63352c3e9bdcc051506e8ced",
+        "picture": "https://media.istockphoto.com/photos/man-performing-biceps-workout-picture-id535465970?k=20&m=535465970&s=612x612&w=0&h=F79IiaEMzUKcgAjNodpsGD5y_vtmCoIhBiD5hyX9-l8=",
+        "name": "Dumbbell Curl",
+        "time": "10"
+    },
+    {
+        "_id": "63352c3e500a42010b0deef7",
+        "picture": "https://images.contentstack.io/v3/assets/blt45c082eaf9747747/blta5b1b9057a1b22aa/5de0ba3b940c0264137800fb/Deadlift_Header_jpg_copy.jpg?width=1200&height=630&fit=crop",
+        "name": "Dead Lift",
+        "time": "30"
+    },
+    {
+        "_id": "63352c3e93c11db43f83c200",
+        "picture": "https://www.muscleandfitness.com/wp-content/uploads/2019/12/Fit-Man-Performing-A-Pullup-In-The-Park.jpg?quality=86&strip=all",
+        "name": "Pull Ups",
+        "time": "20"
+    },
+    {
+        "_id": "63352c3e7fbfd49479c2f0a2",
+        "picture": "https://phantom-marca.unidadeditorial.es/efa9740df47cff7f9466ea78fd720074/crop/0x93/899x599/resize/1320/f/jpg/assets/multimedia/imagenes/2022/01/19/16426036798831.jpg",
+        "name": "Push Ups",
+        "time": "10"
+    },
+    {
+        "_id": "63352c3edcd2e065788306fb",
+        "picture": "https://blog.fitbit.com/wp-content/uploads/2016/10/ArmStanding.jpg",
+        "name": "Squads",
+        "time": "40"
+    },
+    {
+        "_id": "63352c3ea7aa075d81406cd5",
+        "picture": "http://www.stack.com/wp-content/uploads/2013/02/Jump-Rope-629x444.jpg",
+        "name": "Skipping Rope",
+        "time": "30"
+    }
+]
